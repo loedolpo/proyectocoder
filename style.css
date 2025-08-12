@@ -8,9 +8,13 @@ html{
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
+.abrir-menu {
+    display: none;
+}
 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 h2 {
     font-size: 2rem;
@@ -24,7 +28,7 @@ p {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-header {
+/* header {
   background-color: #4b9ae5;
   height: 90px;
   display: flex;
@@ -38,6 +42,15 @@ header a {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
+} */
+ .navcolor {
+    background-color: #3D74B6;
+}
+.navcolor a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: Merriweather, sans-serif;
 }
 ul {
     list-style: none;
@@ -90,6 +103,7 @@ ul.destinos {
     "espacio6 espacio6 espacio6";
     justify-content: center;
     justify-items: center;
+    margin: 2%;
 }
 .titulo1 { grid-area: titulo1;
     text-decoration: solid;
@@ -117,7 +131,7 @@ ul.destinos {
 .map6 { grid-area: map6; }
 .cafe-photos {
   display: grid;
-  grid-template-columns: 35% 30% 35%; 
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto; 
   gap: 1rem;
   grid-template-areas:
@@ -132,6 +146,7 @@ ul.destinos {
     "image7 image9 image10";
     justify-content: center;
     justify-items: center;
+    margin: 2%;
 }
 .title1 { grid-area: title1;
     text-decoration: solid;
@@ -164,7 +179,7 @@ ul.destinos {
 .maps iframe {
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3; /* o 16 / 9 si prefieres formato apaisado */
+  aspect-ratio: 4 / 3;
   max-width: 100%;
   border: 0;
 }
@@ -214,10 +229,6 @@ p{
     text-align: center;
     margin-top: 5px;
 }
-/* color palette */
-#000814 #001D3D #003566 #FFC300 #FFD60A
-/* Header */
-
 .featured image {
     border-radius: 10px;
     height: 150px;
@@ -229,45 +240,95 @@ footer {
     text-align: center;
 }
 @media (max-width: 480px) {
-    header {
-        <img src="Medios/SDM.png" alt="Logo de la marca" width="5" height="5">
+    .nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        background-color: #4b9ae5;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        width: 100%;
     }
     body {
-  background-image: url("../Medios/SDM.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-    ul{
+        background-image: url("../Medios/SDM.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    ul {
         margin-left: 14px;
     }
     .logo {
        display: none;
     }
     .maps {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-        "espacio1 espacio1"
-        "titulo1 titulo1"
-        "espacio2 espacio2"
-        "espacio3 espacio3"
-        "parrafo1 parrafo2"
-        "map1 map2"
-        "parrafo3 parrafo4"
-        "map3 map4"
-        "parrafo5 parrafo6"
-        "map5 map6"
-        "espacio4 espacio4"
-        "espacio5 espacio5"
-        "espacio6 espacio6";
+        "espacio1"
+        "titulo1"
+        "espacio2"
+        "espacio3"
+        "parrafo1"
+        "map1"
+        "parrafo2"
+        "map2"
+        "parrafo3"
+        "map3"
+        "parrafo4"
+        "map4"
+        "parrafo5"
+        "map5"
+        "parrafo6"
+        "map6"
+        "espacio4"
+        "espacio5";
     }
     .cafe-photos {
         grid-template-columns: 1fr;
     }
 }
-@media (min-width: 481px) and (max-width: 978px) 
-    .cafe-photos {
+@media (min-width: 481px) and (max-width: 978px) {
+       .cafe-photos {
         grid-template-columns: 1fr 1fr;
-    }
+       }
+       .maps {
+           grid-template-columns: 1fr 1fr;
+           grid-template-areas:
+           "espacio1 espacio1"
+           "titulo1 titulo1"
+           "espacio2 espacio2"
+           "espacio3 espacio3"
+           "parrafo1 parrafo2"
+           "map1 map2"
+           "parrafo3 parrafo4"
+           "map3 map4"
+           "parrafo5 parrafo6"
+           "map5 map6"
+           "espacio4 espacio4";
+           margin: ;
+       }
+       .cafe-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto; 
+  gap: 1rem;
+  grid-template-areas:
+    "title1 title1 title1"
+    "space1 space1 space1"
+    "title2 title2 title2"
+    "space2 space2 space2"
+    "image1 image1 image2"
+    "image3 image4 image2"
+    "image5 image5 image6"
+    "image7 image8 image8"
+    "image7 image9 image10";
+    justify-items: center;
+    margin: 2%;
 }
