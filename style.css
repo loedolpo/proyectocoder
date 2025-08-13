@@ -196,6 +196,149 @@ ul {
 .featured image {
     justify-content: center;
 }
+.tourism {
+  max-width: 1200px;
+  margin: 0 auto;     
+  padding: 1rem;  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  grid-template-areas: 
+    "blank1 blank1"
+    "blank2 blank2"
+    "place1 question1"
+    "place1 description1"
+    "place1 description2"
+    "blank3 blank3"
+    "question2 place2"
+    "description3 place2"
+    "description4 place2"
+    "blank4 blank4"
+    "place3 question3"
+    "place3 description5"
+    "place3 description6"
+    "blank5 blank5"
+    "question4 place4"
+    "description7 place4"
+    "description8 place4"
+    "blank6 blank6"
+    "place5 question5"
+    "place5 description9"
+    "place5 description10"
+    "blank7 blank7"
+    "question6 place6"
+    "description11 place6"
+    "description12 place6"
+    "blank8 blank8"
+    "blank9 blank9";
+}
+.tourism img {
+  width: 100%;     
+  height: auto;    
+  max-width: 100%; 
+  display: block;  
+  border-radius: 10px; 
+  object-fit: cover;
+}
+.blank1 {
+    grid-area: blank1;
+}
+.blank2 {
+    grid-area: blank2;
+}
+.blank3 {
+    grid-area: blank3;
+}
+.blank4 {
+    grid-area: blank4;
+}
+.blank5 {
+    grid-area: blank5;
+}
+.blank6 {
+    grid-area: blank6;
+}
+.blank7 {
+    grid-area: blank7;
+}
+.blank8 {
+    grid-area: blank8;
+}
+.blank9 {
+    grid-area: blank9;
+}
+.place1 {
+    grid-area: place1;
+}
+.place2 {
+    grid-area: place2;
+}
+.place3 {
+    grid-area: place3;
+}
+.place4 {
+    grid-area: place4;
+}
+.place5 {
+    grid-area: place5;
+}
+.place6 {
+    grid-area: place6;
+}
+.description1 {
+    grid-area: description1;
+}
+.description2 {
+    grid-area: description2;
+}
+.description3 {
+    grid-area: description3;
+}
+.description4 {
+    grid-area: description4;
+}
+.description5 {
+    grid-area: description5;
+}
+.description6 {
+    grid-area: description6;
+}
+.description7 {
+    grid-area: description7;
+}
+.description8 {
+    grid-area: description8;
+}
+.description9 {
+    grid-area: description9;
+}
+.description10 {
+    grid-area: description10;
+}
+.description11 {
+    grid-area: description11;
+}
+.description12 {
+    grid-area: description12;
+}
+.question1 {
+    grid-area: question1;
+}
+.question2 {
+    grid-area: question2;
+}
+.question3 {
+    grid-area: question3;
+}
+.question4 {
+    grid-area: question4;
+}
+.question5 {
+    grid-area: question5;
+}
+.question6 {
+    grid-area: question6;
+}
 .mvd, .pde, .cds {
     display: flex;
     flex-direction: column;
@@ -289,6 +432,45 @@ footer {
         "map6"
         "espacio4"
         "espacio5";
+    }
+    .tourism {
+        max-width: 100%;  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "blank1"
+        "blank2"
+        "place1"
+        "question1"
+        "description1"
+        "description2"
+        "blank3"
+        "place2"
+        "question2"
+        "description3"
+        "description4"
+        "blank4"
+        "place3"
+        "question3"
+        "description5"
+        "description6"
+        "blank5"
+        "place4"
+        "question4"
+        "description7"
+        "description8"
+        "blank6"
+        "place5"
+        "question5"
+        "description9"
+        "description10"
+        "blank7"
+        "place6"
+        "question6"
+        "description11"
+        "description12"
+        "blank8"
+        "blank9";
     }
     .cafe-photos {
         grid-template-columns: 1fr;
