@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entertainment</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="bg-main-color">
     <header>
@@ -88,17 +90,47 @@
                 <img src="../Medios/Thelab.png" alt="The Lab" width="150">
             </a>
         </div>
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li>Montevideo Jazz Festival - March</li>
-                <li>Punta del Este Music Festival - April</li>
-                <li>Colonia Art Fair - May</li>
-            </ul>
+            <section>
+            <h2 class="text-center">Upcoming Events</h2>
+            <div class="marquee-container">
+                <ul class="event-list">
+                    <li>Montevideo Carnival - February</li>
+                     <li>Punta del Este Film Festival - March</li>
+                     <li>Colonia Wine Festival - April</li>
+                     <li>Montevideo Jazz Festival - May</li>
+                     <li>Punta del Este Fashion Week - June</li>
+                     <li>Colonia Art Festival - July</li>
+                     <li>Dia de la Nostalgia - August</li>
+                     <li>Semana de la Cerveza - September</li>
+                     <li>Montevideo Book Fair - October</li>
+                     <li>Punta del Este Jazz Festival - November</li>
+                     <li>Colonia Christmas Market - December</li>
+                     <li>Montevideo Carnival - February</li>
+                     <li>Punta del Este Film Festival - March</li>
+                      <li>Colonia Wine Festival - April</li>
+                     <li>Montevideo Jazz Festival - May</li>
+                     <li>Punta del Este Fashion Week - June</li>
+                     <li>Colonia Art Festival - July</li>
+                     <li>Dia de la Nostalgia - August</li>
+                     <li>Semana de la Cerveza - September</li>
+                     <li>Montevideo Book Fair - October</li>
+                     <li>Punta del Este Jazz Festival - November</li>
+                     <li>Colonia Christmas Market - December</li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 All You Need Is Uruguay. All rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        easing: 'ease-in-out'
+        });
+    </script>
 </body>
 </html>

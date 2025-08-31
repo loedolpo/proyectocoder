@@ -1,0 +1,6 @@
+// Este es un comentario en sass
+//variable comienza con $nombre-variable
+//start with sass --watch sass/estilos.scss sass/estilos.css
+@use 'partials/variables';
+@use 'partials/main';
+@use 'partials/mediaQ';

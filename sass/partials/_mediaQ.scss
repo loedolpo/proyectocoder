@@ -1,0 +1,132 @@
+@media (max-width: 480px) {
+    .nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        background-color: #4b9ae5;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        width: 100%;
+    }
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    ul {
+        margin-left: 14px;
+    }
+    .logo {
+       display: none;
+    }
+    .maps {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "espacio1"
+        "titulo1"
+        "espacio2"
+        "espacio3"
+        "parrafo1"
+        "map1"
+        "parrafo2"
+        "map2"
+        "parrafo3"
+        "map3"
+        "parrafo4"
+        "map4"
+        "parrafo5"
+        "map5"
+        "parrafo6"
+        "map6"
+        "espacio4"
+        "espacio5";
+    }
+    .tourism {
+        max-width: 100%;  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "blank1"
+        "blank2"
+        "place1"
+        "question1"
+        "description1"
+        "description2"
+        "blank3"
+        "place2"
+        "question2"
+        "description3"
+        "description4"
+        "blank4"
+        "place3"
+        "question3"
+        "description5"
+        "description6"
+        "blank5"
+        "place4"
+        "question4"
+        "description7"
+        "description8"
+        "blank6"
+        "place5"
+        "question5"
+        "description9"
+        "description10"
+        "blank7"
+        "place6"
+        "question6"
+        "description11"
+        "description12"
+        "blank8"
+        "blank9";
+    }
+    .cafe-photos {
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 481px) and (max-width: 978px) {
+       .cafe-photos {
+        grid-template-columns: 1fr 1fr;
+       }
+       .maps {
+           grid-template-columns: 1fr 1fr;
+           grid-template-areas:
+           "espacio1 espacio1"
+           "titulo1 titulo1"
+           "espacio2 espacio2"
+           "espacio3 espacio3"
+           "parrafo1 parrafo2"
+           "map1 map2"
+           "parrafo3 parrafo4"
+           "map3 map4"
+           "parrafo5 parrafo6"
+           "map5 map6"
+           "espacio4 espacio4";
+           margin: 0;
+       }
+       .cafe-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto; 
+  gap: 1rem;
+  grid-template-areas:
+    "title1 title1 title1"
+    "space1 space1 space1"
+    "title2 title2 title2"
+    "space2 space2 space2"
+    "image1 image1 image2"
+    "image3 image4 image2"
+    "image5 image5 image6"
+    "image7 image8 image8"
+    "image7 image9 image10";
+    justify-items: center;
+    margin: 0;
+    }
+}
