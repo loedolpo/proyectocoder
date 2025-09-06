@@ -8,3 +8,7 @@ $color-texto-secundario: #555;
 $color-texto-terciario: #777;
 $fuente-principal: 'Merriweather', sans-serif;
 $border-radius: 10px;
+@mixin rounded($radius: 10px) {
+    border: 2px solid #003566;
+    padding: 1rem;
+}

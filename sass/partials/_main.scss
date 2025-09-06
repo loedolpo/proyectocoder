@@ -5,14 +5,14 @@ html {
   font-size: 62.5%;
 }
 body {
-  height: 100%;      // Permite calcular altura
+  height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
 }
 main {
-  flex: 1;           // Empuja el footer hacia abajo
+  flex: 1;
 }
 body {
   font-family: Merriweather, sans-serif;
@@ -107,8 +107,7 @@ main {
 ul.destinos {
   display: flex;
   flex-direction: column;
-  padding-left: 20%;
-  padding-right: 20%;
+  border: 0in;
 }
 .maps {
   display: grid;
@@ -129,7 +128,8 @@ ul.destinos {
   justify-content: center;
   justify-items: center;
   margin: 2%;
-
+  padding-left: 3%;
+  padding-right: 3%;
   iframe {
     width: 100%;
     height: auto;
@@ -315,8 +315,8 @@ ul.destinos {
 footer {
   flex-shrink: 0;
   background-color: #003566;
-  color: #fff;            /* tu color estaba igual al fondo */
+  color: #fff;         
   text-align: center;
   padding: 1.5rem 0;
-  margin: 0;              /* cero márgenes externos */
+  margin: 0;      
 }
